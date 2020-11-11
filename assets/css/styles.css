@@ -1,2 +1,23 @@
+body{
+  background-color:#2D3047;
+  color: white;
+}
+h1{
+  text-align:center;
+  margin-top: 50px;
+}
+.timerr{
+  background-color:#419D78;
+  font-size:20px;
+  text-align:center;
+  margin: 20px 500px 20px 500px;
+  font-weight: bold;
+}
 
-/* css */
+.numbers{
+  font-size: 80px;
+}
+
+.tasks{
+  font-size: 20px;
+}
