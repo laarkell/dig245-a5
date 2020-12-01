@@ -1,5 +1,6 @@
 document.getElementById('timer').innerHTML = 000 + ":" + 30;
-startTimer();
+if (currentTask%2 === 0){startTimer()}
+
 
 function startTimer() {
   var presentTime = document.getElementById('timer').innerHTML;

@@ -4,7 +4,7 @@ var score = 0;
 var currentTask = 0;
 // load task function
 function showTask() {
-	console.log("showTask() currentTask",currentTask);
+	console.log("showTask() currentTask",currentTask, "score", score);
 	if (currentTask === 0) {
 		// display intro
 		$(".main").load("pages/intro.html");
