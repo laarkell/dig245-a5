@@ -37,6 +37,9 @@ function showTask() {
 }
 
 showTask();
+
+document.getElementById('score').innerHTML = score
+
 //send person to task 1
 $(document).on("click", '.tasklink', function() {
 	showTask();
