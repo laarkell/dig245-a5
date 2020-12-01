@@ -38,8 +38,8 @@ function showTask(){
 showTask();
 
 //send person to task 1
-$('#task1').on("click", function(){
-  currentTask = 1;
+$('#task11').on("click", function(){
+  currentTask = currentTask + 1;
   showtask();
 });
 $('#task2').on("click", function(){
