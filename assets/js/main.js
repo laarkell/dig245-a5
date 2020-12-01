@@ -10,6 +10,7 @@ function showTask(){
 		$(".main").load("pages/intro.html");
 	}
 	else if (currentTask === 1){
+    //first task load
 		$(".main").load("pages/task1.html");
 	}
 	else if (currentTask === 2){
@@ -39,7 +40,7 @@ showTask();
 
 //send person to task 1
 $('.task1').on("click", function(){
-  currentTask = 2;
+  currentTask = 1;
   showtask();
 });
 $('#task2').on("click", function(){
