@@ -41,22 +41,12 @@ showTask();
 $(document).on("click", '.tasklink', function() {
 	showTask();
 });
-$('.incorrect').on("click", function() {
-	score = score - 50;
+
+$(document).on("click", '.incorrect', function() {
+  score = score - 50;
 	showTask();
 });
-$('.task1correct').on("click", function() {
-	// reset timerr
-	score = score + 100;
-	showTask();
-});
-$('.task2correct').on("click", function() {
-	// reset timerr
-	score = score + 100;
-	showTask();
-});
-$('.task3correct').on("click", function() {
-	// reset timerr
-	score = score + 100;
+$(document).on("click", '.correct', function() {
+  	score = score + 100;
 	showTask();
 });
