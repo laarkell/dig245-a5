@@ -20,6 +20,7 @@ function showTask() {
 		currentTask = 3;
 	} else if (currentTask === 3) {
 		$(".main").load("pages/task2.html");
+    currentTask = 4;
 	} else if (currentTask === 4) {
 		$(".main").load("pages/intro.html");
 		$("#introtask2").css({
@@ -44,7 +45,6 @@ document.getElementById('score').innerHTML = score
 $(document).on("click", '.tasklink', function() {
 	showTask();
 });
-
 $(document).on("click", '.incorrect', function() {
   score = score - 50;
 });
