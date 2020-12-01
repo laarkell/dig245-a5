@@ -47,7 +47,6 @@ $(document).on("click", '.tasklink', function() {
 
 $(document).on("click", '.incorrect', function() {
   score = score - 50;
-	showTask();
 });
 $(document).on("click", '.correct', function() {
   	score = score + 100;
