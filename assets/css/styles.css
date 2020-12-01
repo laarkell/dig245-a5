@@ -30,3 +30,12 @@ h1{
   background: #cd6f80;
   font-weight: bold;
 }
+.firsttask{
+  background-color: #32CD32;
+  font-family: "Comic Sans MS", Impact, sans-serif;
+}
+
+.secondtask{
+  background-color: #FF69B4;
+  font-family: "Comic Sans MS", Impact, sans-serif;
+}
