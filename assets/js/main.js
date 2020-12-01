@@ -38,13 +38,7 @@ function showTask() {
 
 showTask();
 //send person to task 1
-$(document).on("click", '.task1', function() {
-	showTask();
-});
-$('#task2').on("click", function() {
-	showTask();
-});
-$('#task3').on("click", function() {
+$(document).on("click", '.tasklink', function() {
 	showTask();
 });
 $('.incorrect').on("click", function() {
@@ -54,18 +48,15 @@ $('.incorrect').on("click", function() {
 $('.task1correct').on("click", function() {
 	// reset timerr
 	score = score + 100;
-	currentTask = 2;
 	showTask();
 });
 $('.task2correct').on("click", function() {
 	// reset timerr
 	score = score + 100;
-	currentTask = 4;
 	showTask();
 });
 $('.task3correct').on("click", function() {
 	// reset timerr
 	score = score + 100;
-	currentTask = 6;
 	showTask();
 });
