@@ -11,7 +11,7 @@ function startTimer() {
 
   document.getElementById('timer').innerHTML =
     m + ":" + s;
-  console.log(m)
+  //console.log(m)
   setTimeout(startTimer, 1000);
 }
 

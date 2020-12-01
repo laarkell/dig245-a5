@@ -5,6 +5,7 @@ var currentTask = 0;
 
 // load task function
 function showTask(){
+  console.log(currentTask)
 	if (currentTask === 0){
 		// display intro
 		$(".main").load("pages/intro.html");
