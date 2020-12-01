@@ -2,81 +2,70 @@
 // score
 var score = 0;
 var currentTask = 0;
-
 // load task function
-function showTask(){
-  console.log(currentTask)
-	if (currentTask === 0){
+function showTask() {
+	console.log("showTask() currentTask",currentTask);
+	if (currentTask === 0) {
 		// display intro
 		$(".main").load("pages/intro.html");
-	}
-	else if (currentTask === 1){
-    //first task load
+		currentTask = 1;
+	} else if (currentTask === 1) {
 		$(".main").load("pages/task1.html");
-	}
-	else if (currentTask === 2){
+		currentTask = 2;
+	} else if (currentTask === 2) {
 		$(".main").load("pages/intro.html");
 		$(".introtask1").css({
-			"background-color":"#32CD32"});
-	}
-  else if (currentTask === 3){
+			"background-color": "#32CD32"
+		});
+		currentTask = 3;
+	} else if (currentTask === 3) {
 		$(".main").load("pages/task2.html");
-	}
-  else if (currentTask === 4){
+	} else if (currentTask === 4) {
 		$(".main").load("pages/intro.html");
 		$(".introtask2").css({
-			"background-color":"#32CD32"});
-	}
-  else if (currentTask === 5){
+			"background-color": "#32CD32"
+		});
+		currentTask = 5;
+	} else if (currentTask === 5) {
 		$(".main").load("pages/task3.html");
-	}
-  else if (currentTask === 6){
+	} else if (currentTask === 6) {
 		$(".main").load("pages/intro.html");
 		$(".introtask3").css({
-			"background-color":"#32CD32"});
+			"background-color": "#32CD32"
+		});
 	}
 }
 
 showTask();
-
 //send person to task 1
-$('.task1').on("click", function(){
-  currentTask = 1;
-  showtask();
+$(document).on("click", '.task1', function() {
+	showTask();
 });
-$('#task2').on("click", function(){
-  currentTask = 3;
-  showtask();
+$('#task2').on("click", function() {
+	showTask();
 });
-$('#task3').on("click", function(){
-  currentTask = 5;
-  showtask();
+$('#task3').on("click", function() {
+	showTask();
 });
-
-$('.incorrect').on("click", function(){
-  score = score - 50;
-  showtask();
+$('.incorrect').on("click", function() {
+	score = score - 50;
+	showTask();
 });
-
-$('.task1correct').on("click", function(){
-  // reset timerr
-  score = score + 100;
-  currentTask = 2;
-  showtask();
+$('.task1correct').on("click", function() {
+	// reset timerr
+	score = score + 100;
+	currentTask = 2;
+	showTask();
 });
-$('.task2correct').on("click", function(){
-  // reset timerr
-  score = score + 100;
-  currentTask = 4;
-  showtask();
+$('.task2correct').on("click", function() {
+	// reset timerr
+	score = score + 100;
+	currentTask = 4;
+	showTask();
 });
-$('.task3correct').on("click", function(){
-  // reset timerr
-  score = score + 100;
-  currentTask = 6;
-  showtask();
-});
-
-$(document).on("click", function(){
-  console.log("click happened");
+$('.task3correct').on("click", function() {
+	// reset timerr
+	score = score + 100;
+	currentTask = 6;
+	showTask();
 });
