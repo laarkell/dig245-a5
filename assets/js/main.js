@@ -13,27 +13,30 @@ function showTask() {
 		$(".main").load("pages/task1.html");
 		currentTask = 2;
 	} else if (currentTask === 2) {
-		$(".main").load("pages/intro.html");
-		$("#introtask1").css({
-			"background-color": "#32CD32"
-		});
+		$(".main").load("pages/intro.html"){
+      $("#introtask1").css({
+  			"background-color": "#32CD32"
+  		});
+    }
 		currentTask = 3;
 	} else if (currentTask === 3) {
 		$(".main").load("pages/task2.html");
     currentTask = 4;
 	} else if (currentTask === 4) {
-		$(".main").load("pages/intro.html");
-		$("#introtask2").css({
-			"background-color": "#32CD32"
-		});
+		$(".main").load("pages/intro.html"){
+      $("#introtask2").css({
+  			"background-color": "#32CD32"
+  		});
+    }
 		currentTask = 5;
 	} else if (currentTask === 5) {
 		$(".main").load("pages/task3.html");
 	} else if (currentTask === 6) {
-		$(".main").load("pages/intro.html");
-		$("#introtask3").css({
-			"background-color": "#32CD32"
-		});
+		$(".main").load("pages/intro.html");{
+      $("#introtask3").css({
+        "background-color": "#32CD32"
+      });
+    }
 	}
 }
 
