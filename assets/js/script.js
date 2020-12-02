@@ -1,5 +1,8 @@
 document.getElementById('timer').innerHTML = 000 + ":" + 30;
-if (currentTask%2 !== 0){startTimer()}
+if (currentTask%2 !== 0){startTimer()};
+else {
+  000 + ":" + 30
+}
 
 
 function startTimer() {
