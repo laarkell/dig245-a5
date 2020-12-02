@@ -36,7 +36,8 @@ function showTask() {
 	} else if (currentTask === 5) {
 		$(".main").load("pages/task3.html");
     alert("Sign up here! \n You will not want to miss this once in a lifetime oppourtunity. \n We are offering this only to our 1000th cutomer,and thats you!! \n We couldnt be more excited for you to join our team :) \n sign up! sign up! sign up!");
-	} else if (currentTask === 6) {
+    currentTask = 6;
+  } else if (currentTask === 6) {
 		$(".main").load("pages/intro.html", function(){
       $("#introtask1").css({
   			"background-color": "#32CD32"
