@@ -5,6 +5,7 @@ var currentTask = 0;
 // load task function
 function showTask() {
 	console.log("showTask() currentTask",currentTask, "score", score);
+  scoreKeeper();
 	if (currentTask === 0) {
 		// display intro
 		$(".main").load("pages/intro.html");
@@ -52,11 +53,10 @@ function showTask() {
 
 showTask();
 
-document.getElementById('score').innerHTML = score
 function scoreKeeper() {
-  score = score + 0
-}
-setTimeout(scoreKeeper, 1000);
+  document.getElementById('score').innerHTML = score;
+};
+
 
 //send person to task 1,2,3
 $(document).on("click", '.tasklink', function() {

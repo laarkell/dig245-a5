@@ -2,7 +2,7 @@ document.getElementById('timer').innerHTML = 000 + ":" + 30;
 startTimer()
 
 function startTimer() {
-  if(currentTask%2 == 1){
+  if(currentTask % 2 == 1){
   var presentTime = document.getElementById('timer').innerHTML;
   var timeArray = presentTime.split(/[:]+/);
   var m = timeArray[0];
