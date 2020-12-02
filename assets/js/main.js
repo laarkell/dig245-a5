@@ -24,6 +24,9 @@ function showTask() {
     currentTask = 4;
 	} else if (currentTask === 4) {
 		$(".main").load("pages/intro.html", function(){
+      $("#introtask1").css({
+  			"background-color": "#32CD32"
+  		});
       $("#introtask2").css({
   			"background-color": "#32CD32"
   		});
@@ -33,6 +36,12 @@ function showTask() {
 		$(".main").load("pages/task3.html");
 	} else if (currentTask === 6) {
 		$(".main").load("pages/intro.html", function(){
+      $("#introtask1").css({
+  			"background-color": "#32CD32"
+  		});
+      $("#introtask2").css({
+  			"background-color": "#32CD32"
+  		});
       $("#introtask3").css({
         "background-color": "#32CD32"
       });
