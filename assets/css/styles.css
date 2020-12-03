@@ -7,7 +7,7 @@ h1{
   margin-top: 50px;
 }
 .timerr{
-  background-color: #cd6f80;
+  background-color: #D18394;
   font-size:20px;
   text-align:center;
   font-weight: bold;
@@ -20,14 +20,14 @@ h1{
   border-radius: 50%;
   width: 90px;
   height: 90px;
-  background: #cd6f80;
+  background: #D18394;
   padding: 10px;
   color: #000;
   text-align: center;
   font: 60px Arial, sans-serif;
 }
 .button{
-  background: #cba0a7;
+  background: #F1A8C1;
   font-weight: bold;
 }
 .firsttask{
