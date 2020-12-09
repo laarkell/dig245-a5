@@ -1,22 +1,25 @@
-body{
+body {
   background-color: white;
   color: black;
 }
-h1{
-  text-align:center;
+
+h1 {
+  text-align: center;
   margin-top: 50px;
 }
-.timerr{
+
+.timerr {
   background-color: #D18394;
-  font-size:25px;
-  text-align:center;
+  font-size: 25px;
+  text-align: center;
   font-weight: bold;
 }
 
-.tasks{
+.tasks {
   font-size: 20px;
 }
-.circle{
+
+.circle {
   border-radius: 50%;
   width: 90px;
   height: 90px;
@@ -26,16 +29,18 @@ h1{
   text-align: center;
   font: 60px Arial, sans-serif;
 }
-.button{
+
+.button {
   background: #F1A8C1;
   font-weight: bold;
 }
-.firsttask{
+
+.firsttask {
   background-color: #32CD32;
   font-family: "Comic Sans MS", Impact, sans-serif;
 }
 
-.secondtask{
+.secondtask {
   background-color: #FF69B4;
   font-family: "Comic Sans MS", Impact, sans-serif;
 }
