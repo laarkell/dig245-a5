@@ -3,7 +3,7 @@
 var score = 0;
 var currentTask = 0;
 var seconds = 0;
-var maxSeconds = 30;
+var maxSeconds = 15;
 var timer;
 
 //timer functions
@@ -86,6 +86,7 @@ function showTask() {
 				"background-color": "#32CD32"
 			});
 		});
+		$(".done").load("pages/conclusion.html");
 	}
 }
 showTask();
